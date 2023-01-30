@@ -30,28 +30,29 @@
 
 // project below
 
-const page =(
-  <div>
-    <nav>
-      <img src="./react-logo.png" width="40" alt="react logo" />
-      <h1>ReactFacts</h1>
-      <h3>React Course - Project 1</h3>
-    </nav>
+function Page() {
+  return(
     <div>
-      <h1>Fun Facts about React</h1>
-      <ul>
-        <li>Was first released in 2013</li>
-        <li>Was originally created by Jordan Walke</li>
-        <li>Has well over 100k stars on Github</li>
-        <li>Is maintained by Facebook</li>
-        <li>Powers thousands of enterprise apps, including mobile apps</li>
-      </ul>
+      <header>
+        <nav>
+          <img src="./react-logo.png" width="40" alt="react logo" />
+        </nav>
+      </header>
+      <h1>Why I like React</h1>
+      <ol>
+        <li>React is a hireable skill</li>
+        <li>React is cool</li>
+        <li>It's a declarative framework</li>
+        <li>It's good practise</li>
+      </ol>
+      <footer>
+        © 2023 Laura Brooks Codes. All rights reserved.
+      </footer>
     </div>
-  </div>
-
-)
+  );
+}
 
 ReactDOM.render(
-  page,
+  <Page />,
   document.querySelector("#root")
 )

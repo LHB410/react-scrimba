@@ -33,11 +33,34 @@
 function Page() {
   return(
     <div>
-      <header>
-        <nav>
-          <img src="./react-logo.png" width="40" alt="react logo" />
-        </nav>
-      </header>
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>
+  );
+}
+
+function Header() {
+  return(
+    <header>
+      <nav>
+        <img src="./react-logo.png" width="40" alt="react logo" />
+      </nav>
+    </header>
+  )
+}
+
+function Footer() {
+  return(
+    <footer>
+      © 2023 Laura Brooks Codes. All rights reserved.
+    </footer>
+  )
+}
+
+function MainContent() {
+  return(
+    <div>
       <h1>Why I like React</h1>
       <ol>
         <li>React is a hireable skill</li>
@@ -45,14 +68,11 @@ function Page() {
         <li>It's a declarative framework</li>
         <li>It's good practise</li>
       </ol>
-      <footer>
-        © 2023 Laura Brooks Codes. All rights reserved.
-      </footer>
     </div>
-  );
+  )
 }
 
 ReactDOM.render(
   <Page />,
   document.querySelector("#root")
-)
+);

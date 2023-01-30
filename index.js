@@ -1,33 +1,3 @@
-// ReactDOM.render(<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat nulla reprehenderit maiores, aut magnam modi, quos laudantium nam ducimus eum et numquam repudiandae, delectus perspiciatis harum assumenda labore corporis.</p>, document.querySelector(".my-class"))
-
-// ReactDOM.render(
-//   <ul>
-//     <li>Jedi</li>
-//     <li>Sith</li>
-//     <li>Padawan</li>
-//   </ul>,
-//   document.querySelector("#star-wars-list")
-
-// created function named for the component
-// function MainContent() {
-//   return(
-//     <h1>Hey</h1>
-//   )
-// }
-
-// ReactDOM.render(
-//   <div>
-//     <MainContent />
-//   </div>,
-//   document.querySelector(".main")
-
-// vanilla js. this is what react does
-// const h1 = document.createElement("h1");
-// h1.textContent("hello");
-// h1.className = "header";
-// document.querySelector(".root2").append(h1);
-
-
 // project below
 
 function Page() {
@@ -43,8 +13,13 @@ function Page() {
 function Header() {
   return(
     <header>
-      <nav>
-        <img src="./react-logo.png" width="40" alt="react logo" />
+      <nav className="navbar">
+        <img className="nav-logo" src="./react-logo.png" width="40" alt="react logo" />
+        <ul className="nav-items">
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
       </nav>
     </header>
   )
@@ -52,7 +27,7 @@ function Header() {
 
 function Footer() {
   return(
-    <footer>
+    <footer className="footer">
       © 2023 Laura Brooks Codes. All rights reserved.
     </footer>
   )
@@ -60,7 +35,7 @@ function Footer() {
 
 function MainContent() {
   return(
-    <div>
+    <div className="main-content">
       <h1>Why I like React</h1>
       <ol>
         <li>React is a hireable skill</li>
